@@ -1,4 +1,6 @@
+
 import "./globals.css";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "Shivam Chaurasiya - Portfolio",
@@ -8,39 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <nav className="container">
-            <div className="logo">Shivam Chaurasiya</div>
-            <ul className="nav-links">
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#testimonials">Testimonials</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              {/* <li>
-                <a href="/admin">Admin</a>
-              </li> */}
-            </ul>
-            <div className="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </nav>
-        </header>
+          <Navbar />
         {children}
         <footer>
           <div className="container">
